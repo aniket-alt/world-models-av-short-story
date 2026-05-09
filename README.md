@@ -1,4 +1,4 @@
-# World Models for Autonomous Driving — Deep Learning Short Story
+# World Models for Autonomous Driving - Deep Learning Short Story
 
 **Name:** Aniket Anil Naik
 **Course:** CMPE 258 - Deep Learning, San José State University
