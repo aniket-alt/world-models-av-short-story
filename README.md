@@ -19,7 +19,7 @@
 🔗 [Link coming soon]
 
 ## 💻 Code Reproduction
-See `/code/reproduction/` — trajectory forecasting experiment 
+See `/code/reproduction/` - trajectory forecasting experiment 
 using the autoresearch template.
 
 ---
