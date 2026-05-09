@@ -1,8 +1,8 @@
 # Short Story Assignment: Latent World Models for Autonomous Driving
 
-**Course:** CMPE 258 — Deep Learning, San José State University  
-**Name:** Aniket [Your Last Name]  
-**Student ID:** [Your Student ID]
+**Course:** CMPE 258 - Deep Learning, San José State University  
+**Name:** Aniket Anil Naik  
+**Student ID:** 019107114
 
 ---
 
@@ -31,7 +31,7 @@
 
 ## 📖 Paper Summary
 
-Autonomous vehicles must deal with two brutal realities: the real world is dangerous and unpredictable, and you cannot crash a real car a million times to teach an AI to drive safely. The solution the research community is increasingly betting on is the **World Model** — an AI system that can *imagine the future* before it happens.
+Autonomous vehicles must deal with two brutal realities: the real world is dangerous and unpredictable, and you cannot crash a real car a million times to teach an AI to drive safely. The solution the research community is increasingly betting on is the **World Model** - an AI system that can *imagine the future* before it happens.
 
 This 2026 survey paper, the first of its kind to take a **latent-centric lens** to the entire field, asks: across all the different world model approaches for autonomous driving, what are the shared design principles that determine success or failure?
 
@@ -54,19 +54,19 @@ A **Latent World Model (LWM)** is a world model that performs its "imagining" in
 
 These are the design principles that determine whether a latent world model actually works in real closed-loop deployment:
 
-- **Structural Isomorphism & Geometric Priors** — the latent space must mirror real-world 3D geometry
-- **Long-Horizon Temporal Stability** — errors must not compound over multi-second rollouts
-- **Semantic & Reasoning Alignment** — latents must encode meaning, not just appearance
-- **Value-Aligned Objectives & Post-Training** — the model must optimize for safety, not just reconstruction
-- **Adaptive Computation & Deliberation** — spend more compute on hard decisions, less on easy ones
+- **Structural Isomorphism & Geometric Priors** - the latent space must mirror real-world 3D geometry
+- **Long-Horizon Temporal Stability** - errors must not compound over multi-second rollouts
+- **Semantic & Reasoning Alignment** - latents must encode meaning, not just appearance
+- **Value-Aligned Objectives & Post-Training** - the model must optimize for safety, not just reconstruction
+- **Adaptive Computation & Deliberation** - spend more compute on hard decisions, less on easy ones
 
 **3. A New Evaluation Framework**
 
 The paper exposes a critical problem: models that score beautifully on open-loop metrics (FID, FVD) can still drive terribly in closed-loop. It proposes three new metrics:
 
-- **Closed-loop Safety Gap (CSG)** — directly measures the gap between paper metrics and real deployment safety
-- **Temporal Coherence Score (TCS)** — checks whether long-horizon rollouts remain physically plausible
-- **Deliberation Cost (DC)** — resource-aware metric penalizing expensive models that aren't safer
+- **Closed-loop Safety Gap (CSG)** - directly measures the gap between paper metrics and real deployment safety
+- **Temporal Coherence Score (TCS)** - checks whether long-horizon rollouts remain physically plausible
+- **Deliberation Cost (DC)** - resource-aware metric penalizing expensive models that aren't safer
 
 ---
 
@@ -89,15 +89,6 @@ world-models-av-short-story/
 │       │   └── plots/               ← Visualizations
 │       └── README.md                ← Explains what was reproduced and how
 │
-├── article/
-│   └── medium_draft.md              ← Phase 4 Medium article draft
-│
-├── slides/
-│   └── latent_world_models_slides.pdf ← Phase 4 slide deck
-│
-├── video/
-│   └── README.md                    ← YouTube link + recording notes
-│
 └── assets/
     └── images/                      ← Diagrams and figures from the paper
 ```
@@ -109,7 +100,7 @@ world-models-av-short-story/
 The code reproduction implements a **latent trajectory forecasting experiment** as a proxy for the core latent world model behavior described in the paper. Using the [`dlmastery/autoresearch`](https://github.com/dlmastery/autoresearch) template philosophy, the experiment:
 
 1. Encodes vehicle trajectory sequences into a latent space using an LSTM encoder
-2. Runs an autoresearch loop — systematically trying different latent architectures
+2. Runs an autoresearch loop - systematically trying different latent architectures
 3. Evaluates each architecture on trajectory prediction metrics (ADE, FDE, L2)
 4. Reports the best-performing configuration with visualizations
 
@@ -124,7 +115,7 @@ See [`/code/reproduction/README.md`](./code/reproduction/README.md) for full set
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
-│              LATENT WORLD MODEL — COMPLETE PICTURE                  │
+│              LATENT WORLD MODEL - COMPLETE PICTURE                  │
 ├──────────────┬──────────────────────────────────────────────────────┤
 │   INPUTS     │  Camera + LiDAR + HD Maps + Text + Ego State         │
 ├──────────────┼──────────────────────────────────────────────────────┤
@@ -141,7 +132,7 @@ See [`/code/reproduction/README.md`](./code/reproduction/README.md) for full set
 ├──────────────┼──────────────────────────────────────────────────────┤
 │  EVALUATION  │  FID/FVD (visual) | IoU (occupancy)                  │
 │              │  Collision Rate/RC (closed-loop)                      │
-│              │  CSG / TCS / DC (new — proposed in this paper)        │
+│              │  CSG / TCS / DC (new - proposed in this paper)        │
 └──────────────┴──────────────────────────────────────────────────────┘
 ```
 
@@ -151,5 +142,5 @@ See [`/code/reproduction/README.md`](./code/reproduction/README.md) for full set
 
 - **Primary Paper:** Zeng, R., & Dong, Y. (2026). *Latent World Models for Automated Driving: A Unified Taxonomy, Evaluation Framework, and Open Challenges.* arXiv:2603.09086. IEEE TITS. https://arxiv.org/abs/2603.09086
 - **Background Survey:** Tu, S. et al. (2025/2026). *The Role of World Models in Shaping Autonomous Driving: A Comprehensive Survey.* arXiv:2502.10498v2.
-- **Autoresearch Template:** dlmastery/autoresearch — https://github.com/dlmastery/autoresearch
-- **Awesome World Model Repo:** LMD0311/Awesome-World-Model — https://github.com/LMD0311/Awesome-World-Model
+- **Autoresearch Template:** dlmastery/autoresearch - https://github.com/dlmastery/autoresearch
+- **Awesome World Model Repo:** LMD0311/Awesome-World-Model - https://github.com/LMD0311/Awesome-World-Model
