@@ -1,8 +1,8 @@
 # Short Story Assignment: Latent World Models for Autonomous Driving
 
-**Course:** CMPE 258 — Deep Learning, San José State University  
-**Name:** Aniket [Your Last Name]  
-**Student ID:** [Your Student ID]
+**Course:** CMPE 258 - Deep Learning, San José State University  
+**Name:** Aniket Anil Naik  
+**Student ID:** 019107114
 
 ---
 
