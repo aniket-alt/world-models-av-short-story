@@ -1,0 +1,59 @@
+{
+  "experiment": "Latent Trajectory Forecasting \u2014 Autoresearch Loop",
+  "paper": "arXiv:2603.09086 \u2014 Latent World Models for Automated Driving",
+  "metric_used": "ADE (Average Displacement Error) \u2014 lower is better",
+  "best_architecture": "Transformer   (Attention-Based Context)",
+  "best_ade": 0.0536,
+  "obs_len": 8,
+  "pred_len": 12,
+  "latent_dim": 64,
+  "results": [
+    {
+      "architecture": "LSTM Encoder  (Continuous Hidden State)",
+      "ade": 0.0541,
+      "fde": 0.1057,
+      "n_params": 219352,
+      "train_time_s": 38.6
+    },
+    {
+      "architecture": "GRU Encoder   (Gated Continuous State)",
+      "ade": 0.0539,
+      "fde": 0.1049,
+      "n_params": 169432,
+      "train_time_s": 67.8
+    },
+    {
+      "architecture": "Transformer   (Attention-Based Context)",
+      "ade": 0.0536,
+      "fde": 0.0983,
+      "n_params": 285016,
+      "train_time_s": 113.5
+    }
+  ],
+  "autoresearch_log": [
+    {
+      "timestamp": "2026-05-09T16:48:33.781212",
+      "architecture": "LSTM Encoder  (Continuous Hidden State)",
+      "ade": 0.0541,
+      "fde": 0.1057,
+      "decision": "KEEP",
+      "best_so_far": 0.0541
+    },
+    {
+      "timestamp": "2026-05-09T16:49:41.682699",
+      "architecture": "GRU Encoder   (Gated Continuous State)",
+      "ade": 0.0539,
+      "fde": 0.1049,
+      "decision": "KEEP",
+      "best_so_far": 0.0539
+    },
+    {
+      "timestamp": "2026-05-09T16:51:35.264934",
+      "architecture": "Transformer   (Attention-Based Context)",
+      "ade": 0.0536,
+      "fde": 0.0983,
+      "decision": "KEEP",
+      "best_so_far": 0.0536
+    }
+  ]
+}
