@@ -88,9 +88,6 @@ world-models-av-short-story/
 │       │   ├── metrics.json         ← Quantitative results
 │       │   └── plots/               ← Visualizations
 │       └── README.md                ← Explains what was reproduced and how
-│
-└── assets/
-    └── images/                      ← Diagrams and figures from the paper
 ```
 
 ---
