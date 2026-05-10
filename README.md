@@ -22,7 +22,7 @@
 
 | Deliverable | Link |
 |---|---|
-| 📝 **Medium Article** | [Link coming soon] |
+| 📝 **Medium Article** | [Link](https://medium.com/@aniketanil.naik/when-self-driving-cars-start-to-imagine-the-2026-shift-to-latent-world-models-e7863e11b0b6) |
 | 🖥️ **Slide Deck (SlideShare)** | [Link coming soon] |
 | 🎥 **YouTube Video Presentation** | [Link coming soon] |
 | 💻 **Code Reproduction** | See [`/code/reproduction/`](./code/reproduction/) |
