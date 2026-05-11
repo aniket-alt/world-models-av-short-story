@@ -24,7 +24,7 @@
 |---|---|
 | 📝 **Medium Article** | [Link](https://medium.com/@aniketanil.naik/when-self-driving-cars-start-to-imagine-the-2026-shift-to-latent-world-models-e7863e11b0b6) |
 | 🖥️ **Slide Deck (SlideShare)** | [Link](https://docs.google.com/presentation/d/18YMxu16jzfSEjWE6bXKcbvuR9iTjsHAo/edit?usp=sharing&ouid=114601031286503291700&rtpof=true&sd=true) |
-| 🎥 **YouTube Video Presentation** | [Link coming soon] |
+| 🎥 **YouTube Video Presentation** | [Link](https://drive.google.com/file/d/1EoCbef76YC28v5PtnxpOy50dKowITw1V/view?usp=sharing) |
 | 💻 **Code Reproduction** | See [`/code/reproduction/`](./code/reproduction/) |
 
 ---
